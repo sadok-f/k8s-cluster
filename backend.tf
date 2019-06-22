@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "kiwi-k8s-states"
+    bucket = "kiwi-gke-states"
     prefix = "kiwi"
     credentials = "service-account.json"
   }

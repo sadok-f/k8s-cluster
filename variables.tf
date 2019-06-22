@@ -18,7 +18,7 @@ variable num_nodes {
 }
 
 variable cluster_name {
-  default = "dev"
+  default = "kiwi-dev"
 }
 
 variable k8s_version {
@@ -26,7 +26,7 @@ variable k8s_version {
 }
 
 variable project_name {
-  default = "k8s-tuto"
+  default = "kiwi-k8s-244506"
 }
 
 variable subnetwork_name {
