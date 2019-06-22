@@ -1,3 +1,4 @@
 .idea/
 .terraform/
-k8s-tuto-service.json
+service-account.json
+
