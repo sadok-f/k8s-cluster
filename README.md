@@ -27,3 +27,8 @@
 
 ### Deploy Lorem-go application to K8S Cluster
     kubectl apply -f lorem-deployment.yaml
+    
+    
+### Accessing the application
+
+[http://34.98.104.20/](http://34.98.104.20/)
