@@ -20,5 +20,10 @@
 ### Check the cluster node
     kubectl get nodes -o wide
     
+### Lorem-go Application
+
+
+[https://github.com/sadok-f/lorem-go](https://github.com/sadok-f/lorem-go)
+
 ### Deploy Lorem-go application to K8S Cluster
     kubectl apply -f lorem-deployment.yaml
