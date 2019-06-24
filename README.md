@@ -1,4 +1,4 @@
-### install the tools
+### Install the tools
     brew install jq
 
 Install t he [Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-macos)
@@ -12,6 +12,10 @@ Install t he [Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-mac
 Create new Service Accounts from [GCP Console](https://console.cloud.google.com/iam-admin/serviceaccounts) and generate the service-account.json after that:
 
     gcloud iam service-accounts keys create service-account.json --iam-account k8s-773@kiwi-k8s-244506.iam.gserviceaccount.com
+
+### Google Cloud Storage (GCS) as Terraform Backend Remote State
+As defined in the file `backend.tf` a bucket named `kiwi-gke-states` is created in GCS in order to create a remote state that can be used within a team.
+
 
 ### Run Terraform to create Kubernetes Cluster
     terraform init
@@ -33,7 +37,7 @@ Create new Service Accounts from [GCP Console](https://console.cloud.google.com/
     
 ### Content of lorem-deployment.yaml
 ```yaml
-    ## Application Deployment Object
+## Application Deployment Object
     apiVersion: extensions/v1beta1
     kind: Deployment
     metadata:
