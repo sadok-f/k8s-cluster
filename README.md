@@ -16,3 +16,9 @@
 
 ### Get the cluster configuration for Kubectl
     gcloud container clusters get-credentials kiwi-dev
+    
+### Check the cluster node
+    kubectl get nodes -o wide
+    
+### Deploy Lorem-go application to K8S Cluster
+    kubectl apply -f lorem-deployment.yaml
