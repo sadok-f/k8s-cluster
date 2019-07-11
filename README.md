@@ -11,7 +11,7 @@ Install t he [Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-mac
 ### General service-account.json
 Create new Service Accounts from [GCP Console](https://console.cloud.google.com/iam-admin/serviceaccounts) and generate the service-account.json after that:
 
-    gcloud iam service-accounts keys create service-account.json --iam-account k8s-773@kiwi-k8s-244506.iam.gserviceaccount.com
+    gcloud iam service-accounts keys create service-account.json --iam-account xxxx@kxxxx.iam.gserviceaccount.com
 
 ### Google Cloud Storage (GCS) as Terraform Backend Remote State
 As defined in the file `backend.tf` a bucket named `kiwi-gke-states` is created in GCS in order to create a remote state that can be used within a team.
